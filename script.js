@@ -1,5 +1,10 @@
 const menu = document.querySelectorAll(".menu_wrapper");
 
-const modal = () => {
-  console.log("Anjay");
+window.onscroll = () => {
+  const navbar = document.querySelector("nav");
+  if (window.pageYOffset > 145) {
+    navbar.classList.add("nav-blur");
+  } else {
+    navbar.classList.remove("nav-blur");
+  }
 };
