@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Objek Wisata Tegal</title>
+    <title>Tegal</title>
     <link rel="stylesheet" href="./style/styles.css" />
   </head>
   <body>
     <!-- Navbar -->
     <nav class="navbar">
       <div class="title_wrapper">
-        <h1 class="title">Objek Wisata Tegal</h1>
+        <h1 class="title">Tegal</h1>
       </div>
       <div class="menu_wrapper">
         <ul>
@@ -20,8 +20,8 @@
           <li><a href="#paketwisata">Paket Wisata</a></li>
           <li><a href="#testimoni">Testimoni</a></li>
           <li><a href="#kontak">Kontak</a></li>
-          <li><a href="">Sign Up</a></li>
-          <li><a href="">Sign In</a></li>
+          <li><a href="" class="btn_sign_up">Sign Up</a></li>
+          <li><a href="" class="btn_sign_in">Sign In</a></li>
         </ul>
       </div>
     </nav>
@@ -33,9 +33,6 @@
       <h1>Selamat Datang di Tegal</h1>
       <span></span>
     </section>
-    <!-- <section class="content_wrapper_2">
-      <h2>Hello World</h2>
-    </section> -->
     <!-- Akhir Home -->
 
     <!-- Wisata -->
@@ -135,18 +132,22 @@
     <!-- Akhir Wisata-->
 
     <!-- Paket Wisata -->
-    <span id="paketwisata"></span>
-    <section class="paket_wisata_section">
+    <section class="paket_wisata_section" id="paketwisata">
       <h2>Paket Wisata</h2>
     </section>
     <!-- Akhir Paket Wisata -->
 
     <!-- Testimoni -->
-    <span id="testimoni"></span>
-    <section class="testimoni_section">
+    <section class="testimoni_section" id="testimoni">
       <h2>Testimoni Kami</h2>
     </section>
-    <!-- Akhir Paket Wisata -->
+    <!-- Akhir Testimoni -->
+
+    <!-- Kontak -->
+    <section class="kontak_section" id="kontak">
+      <h2>Kontak</h2>
+    </section>
+    <!-- Akhir Kontak -->
 
     <!-- Footer -->
     <footer>
@@ -155,6 +156,25 @@
     </footer>
     <!-- Akhir Footer -->
 
+    <!-- Modal -->
+
+    <div id="signUpModal" class="modal animate-opacity">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close-signup">&times;</span>
+        <p>Sign Up</p>
+      </div>
+    </div>
+
+    <div id="signInModal" class="modal animate-opacity">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close-signin">&times;</span>
+        <p>Sign In</p>
+      </div>
+    </div>
+
+    <!-- Akhir Modal -->
     <script src="./script.js"></script>
   </body>
 </html>
