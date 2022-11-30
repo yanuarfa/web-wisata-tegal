@@ -41,7 +41,9 @@ spanSignIn.addEventListener("click", () => {
 window.onclick = function (e) {
   if (e.target == signUpModal) {
     signUpModal.style.display = "none";
+    document.body.style.overflow = "auto";
   } else if (e.target == signInModal) {
     signInModal.style.display = "none";
+    document.body.style.overflow = "auto";
   }
 };
