@@ -96,6 +96,7 @@
 }
 
 .wisata_h2 {
+  font-size: 2rem;
   text-align: center;
   margin: 50px 0 20px 0;
 }
@@ -133,6 +134,7 @@
 }
 
 .paket_wisata_section > h2 {
+  font-size: 2rem;
   text-align: center;
   padding-top: 80px;
 }
@@ -146,6 +148,7 @@
 }
 
 .testimoni_section > h2 {
+  font-size: 2rem;
   text-align: center;
   padding-top: 80px;
 }
@@ -159,6 +162,7 @@
 }
 
 .kontak_section > h2 {
+  font-size: 2rem;
   text-align: center;
 }
 
@@ -192,11 +196,51 @@ footer {
 }
 
 /* Modal Content */
-.modal-content {
+.modal-header {
   background-color: #ffffff;
   margin: auto;
   padding: 50px;
-  width: 80%;
+  width: 50%;
+  border-radius: 5px;
+}
+
+.modal-content {
+  margin-top: 25px;
+  height: fit-content;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  margin: 12px 0;
+}
+
+.column label {
+  margin-bottom: 4px;
+  color: rgb(87, 87, 87);
+}
+
+.column input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid rgb(87, 87, 87);
+}
+
+.modal-content form button {
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  padding: 15px;
+  width: 100%;
+  transition: 0.3s all;
+  font-size: 1em;
+  color: white;
+  background-color: rgb(78, 78, 247);
+}
+
+.modal-content form button:hover {
+  background-color: rgb(58, 58, 192);
 }
 
 /* The Close Button */
@@ -241,7 +285,7 @@ footer {
 }
 
 .animate-show {
-  animation: show 0.4s;
+  animation: show 0.8s;
   animation-fill-mode: forwards;
 }
 @keyframes show {
