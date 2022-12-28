@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
 
+:root {
+  --black: rgb(11, 14, 49);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -24,7 +28,7 @@
 .nav-blur {
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
-  background-color: rgba(255, 255, 255, 0.144);
+  background-color: rgba(230, 224, 224, 0.37);
 }
 
 .title_wrapper {
@@ -59,13 +63,13 @@
 
 .menu_wrapper ul li a:hover {
   color: white;
-  background-color: #fc5185;
+  background-color: #5e51d6;
 }
 
 .content_wrapper {
   display: flex;
   min-height: 500px;
-  background-image: url(https://i.picsum.photos/id/296/2048/1024.jpg?hmac=1SofRuZ6e0Yyp5DhCTI1Pd4Xob-AwYG9wblhjcn8Vq8);
+  background-image: url(https://lh3.googleusercontent.com/blogger_img_proxy/ANbyha1LMnyR-cXi4RM-RgUExiH6VqpA-ANn8NyurkDRsRTv4NnM96P6J094B_zWd-fRTKIm_mcIiP8Ot38UjEcwy-WIO46lqkG9wyW_swWMfufjDcGKx4IrtcH56m4jhv3YcVxNzc2cdSYYGQ0uisBvrpsrJFU=w1200-h630-p-k-no-nu);
   background-size: cover;
   background-position: center;
   align-items: center;
@@ -77,14 +81,14 @@
   font-size: 3rem;
   font-weight: bold;
   z-index: 1;
-  color: white;
+  color: rgb(234, 235, 250);
 }
 
 .content_wrapper > span {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.219);
+  background-color: rgba(22, 22, 22, 0.26);
   backdrop-filter: blur(1px);
 }
 
@@ -98,6 +102,7 @@
 .wisata_h2 {
   font-size: 2rem;
   text-align: center;
+  color: var(--black);
   margin: 50px 0 20px 0;
 }
 
@@ -111,10 +116,13 @@
 .card {
   width: 40%;
   max-width: 500px;
+  height: 520px;
   background-color: rgba(255, 255, 255, 0.829);
   border-radius: 10px;
   padding: 10px;
+  position: relative;
   margin: 20px;
+  border: 1px solid rgba(138, 138, 138, 0.24);
   box-shadow: 10px 10px 82px -41px rgba(9, 9, 18, 0.43);
   -webkit-box-shadow: 10px 10px 82px -41px rgba(9, 9, 18, 0.43);
   -moz-box-shadow: 10px 10px 82px -41px rgba(9, 9, 18, 0.43);
@@ -130,13 +138,49 @@
 /* Style Halaman Paket Wisata */
 
 .paket_wisata_section {
-  height: 700px;
+  height: fit-content;
+  margin: 0 100px 50px 100px;
 }
 
 .paket_wisata_section > h2 {
   font-size: 2rem;
+  color: var(--black);
   text-align: center;
   padding-top: 80px;
+  margin: 50px 0 20px 0;
+}
+
+.wrapper-paketwisata {
+  /* margin-top: 20px; */
+  display: flex;
+  gap: 2px;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+}
+
+.w-cardpaketwisata {
+  width: 20rem;
+}
+
+.h-cardpaketwisata {
+  height: 490px;
+  margin-bottom: 2rem;
+}
+
+.cardbtn-wrapper {
+  position: absolute;
+  bottom: -50px;
+  width: 90%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+
+.harga-paket {
+  text-align: center;
+  margin: 4px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: rgb(70, 68, 68);
 }
 
 /* Akhir Style Halaman Paket Wisata */
@@ -144,13 +188,80 @@
 /* Style Halaman Testimoni */
 
 .testimoni_section {
-  height: 500px;
+  height: fit-content;
+  background-color: #191e24;
+  position: relative;
+}
+
+.testimoni_section::before {
+  content: "";
+  position: relative;
+  display: block;
+  height: 150px;
+  background-color: #ffffff;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 13%, 0 79%);
+  clip-path: polygon(0 0, 100% 0, 100% 13%, 0 79%);
+  margin-top: 0px;
+  top: 0;
+}
+
+.testimoni_section::after {
+  content: "";
+  position: relative;
+  display: block;
+  height: 195px;
+  background-color: #ffffff;
+  -webkit-clip-path: polygon(0 71%, 100% 33%, 100% 100%, 0 100%);
+  clip-path: polygon(0 71%, 100% 33%, 100% 100%, 0 100%);
+  bottom: 0;
 }
 
 .testimoni_section > h2 {
   font-size: 2rem;
+  color: rgb(255, 255, 255);
   text-align: center;
-  padding-top: 80px;
+  margin: 0 0 20px 0;
+}
+
+.wrapper-eachtestimoni {
+  margin: 50px 100px 50px 100px;
+  display: flex;
+}
+
+.wrapper-imgtestimoni {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper-imgtestimoni > img {
+  width: 450px;
+  border-radius: 10px;
+}
+
+.testimoni-people {
+  width: 50%;
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.text-testimoni h2 {
+  font-size: 1.7rem;
+  margin-bottom: 20px;
+}
+
+.text-testimoni p:nth-child(2) {
+  margin: 10px 0 20px 0;
+  font-size: 1.2rem;
+}
+
+.text-testimoni p:nth-child(3) {
+  margin: 20px 0 20px 0;
+  font-size: 1.2rem;
 }
 
 /* Akhir Style Halaman Testimoni */
@@ -158,11 +269,16 @@
 /* Style Halaman Kontak */
 
 .kontak_section {
-  height: 500px;
+  height: 800px;
+}
+
+.span {
+  height: 50px;
 }
 
 .kontak_section > h2 {
   font-size: 2rem;
+  color: var(--black);
   text-align: center;
 }
 
@@ -196,7 +312,7 @@ footer {
 }
 
 /* Modal Content */
-.modal-header {
+.modal-wrapper {
   background-color: #ffffff;
   margin: auto;
   padding: 50px;
@@ -224,6 +340,10 @@ footer {
   padding: 10px;
   border-radius: 8px;
   border: 1px solid rgb(87, 87, 87);
+}
+
+.column input:focus {
+  border: 1px solid rgb(99, 99, 241);
 }
 
 .modal-content form button {
@@ -298,3 +418,56 @@ footer {
 }
 
 /* Akhir Modal */
+
+/* Global style */
+
+.card_paragraph {
+  color: rgb(51, 49, 49);
+}
+
+.btn {
+  display: inline-block;
+  color: rgb(22, 17, 54);
+  font-size: 1.1em;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 12px;
+  width: 100%;
+  background-color: #7d73d8;
+  text-align: center;
+  border-radius: 5px;
+  transition: 0.2s all;
+}
+
+.btn:hover {
+  color: rgb(255, 248, 248);
+  background-color: #5e51d6;
+  box-shadow: 0 4px 20px 0.1px rgba(9, 9, 18, 0.295);
+}
+
+.mv-8 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mv-4 {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.f09 {
+  font-size: 0.9rem;
+}
+
+.text-secondary {
+  color: rgb(31, 21, 61);
+}
+
+hr {
+  height: 0.7px;
+  color: rgba(185, 185, 185, 0.192);
+}

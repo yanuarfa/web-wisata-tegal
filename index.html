@@ -17,7 +17,7 @@
         <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#wisata">Wisata</a></li>
-          <li><a href="#paketwisata">Paket Wisata</a></li>
+          <li><a href="#paketwisata">Paket</a></li>
           <li><a href="#testimoni">Testimoni</a></li>
           <li><a href="#kontak">Kontak</a></li>
           <li><a href="" class="btn_sign_up">Sign Up</a></li>
@@ -37,7 +37,7 @@
 
     <!-- Wisata -->
     <span id="wisata"></span>
-    <h2 class="wisata_h2">Wisata</h2>
+    <h2 class="wisata_h2">Pilihan Wisata</h2>
     <section class="wisata_section">
       <div class="card">
         <div class="card_image_section">
@@ -134,17 +134,118 @@
     <!-- Paket Wisata -->
     <section class="paket_wisata_section" id="paketwisata">
       <h2>Paket Wisata</h2>
+      <div class="wrapper-paketwisata">
+        <div class="card w-cardpaketwisata h-cardpaketwisata">
+          <div class="card_image_section">
+            <img
+              src="https://assets.pikiran-rakyat.com/crop/0x0:0x0/x/photo/2021/06/06/373517855.jpeg"
+              alt=""
+            />
+          </div>
+          <div>
+            <h3 class="card_title mv-4 text-secondary">
+              Wisata 1 Hari 2 Malam
+            </h3>
+            <p class="card_paragraph f09 text-grey">
+              Nikmati waktu liburan anda ditegal dengan wisata yang tersedia
+              tanpa khawatirkan budget!
+            </p>
+          </div>
+          <div class="cardbtn-wrapper">
+            <hr />
+            <p class="harga-paket">Rp. 350.000</p>
+            <a href="#paketwisata" class="btn mv-8">Pilih Paket</a>
+          </div>
+        </div>
+
+        <div class="card w-cardpaketwisata h-cardpaketwisata">
+          <div class="card_image_section">
+            <img
+              src="https://assets.pikiran-rakyat.com/crop/0x0:0x0/x/photo/2021/06/06/373517855.jpeg"
+              alt=""
+            />
+          </div>
+          <div>
+            <h3 class="card_title mv-4 text-secondary">
+              Wisata 2 Hari 2 Malam
+            </h3>
+            <p class="card_paragraph f09 text-grey">
+              Wisata ke beberapa destinasi yang ada ditegal tanpa takut biaya
+              habis!
+            </p>
+            <div class="cardbtn-wrapper">
+              <hr />
+              <p class="harga-paket">Rp. 600.000</p>
+              <a href="#paketwisata" class="btn mv-8">Pilih Paket</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- Akhir Paket Wisata -->
 
     <!-- Testimoni -->
     <section class="testimoni_section" id="testimoni">
       <h2>Testimoni Kami</h2>
+      <div class="wrapper-testimoni">
+        <div class="wrapper-eachtestimoni">
+          <div class="wrapper-imgtestimoni">
+            <img
+              src="https://images.unsplash.com/photo-1522556189639-b150ed9c4330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+              alt=""
+            />
+          </div>
+          <div class="testimoni-people">
+            <div class="text-testimoni">
+              <h2>Budi Putra</h2>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Molestias rerum beatae facere labore architecto, placeat optio
+                adipisci consequatur enim repellendus quas illum? Cumque
+                deserunt eveniet molestias quae nobis, deleniti voluptas?
+              </p>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe,
+                error nostrum debitis quod, dolor iste ut animi beatae inventore
+                quis tenetur sunt cumque voluptatem facere consequatur
+                voluptatibus deserunt temporibus doloribus.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="wrapper-eachtestimoni">
+          <div class="testimoni-people">
+            <div class="text-testimoni">
+              <h2>Dinda Kurnia</h2>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Molestias rerum beatae facere labore architecto, placeat optio
+                adipisci consequatur enim repellendus quas illum? Cumque
+                deserunt eveniet molestias quae nobis, deleniti voluptas?
+              </p>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe,
+                error nostrum debitis quod, dolor iste ut animi beatae inventore
+                quis tenetur sunt cumque voluptatem facere consequatur
+                voluptatibus deserunt temporibus doloribus.
+              </p>
+            </div>
+          </div>
+          <div class="wrapper-imgtestimoni">
+            <img
+              src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
     </section>
     <!-- Akhir Testimoni -->
 
     <!-- Kontak -->
     <section class="kontak_section" id="kontak">
+      <div class="span"></div>
       <h2>Kontak</h2>
     </section>
     <!-- Akhir Kontak -->
@@ -160,7 +261,7 @@
 
     <div id="signUpModal" class="modal animate-opacity">
       <!-- Modal content -->
-      <div class="modal-header">
+      <div class="modal-wrapper">
         <span class="close-signup">&times;</span>
         <h2>Sign Up</h2>
         <div class="modal-content">
@@ -199,7 +300,7 @@
 
     <div id="signInModal" class="modal animate-opacity">
       <!-- Modal content -->
-      <div class="modal-header">
+      <div class="modal-wrapper">
         <span class="close-signin">&times;</span>
         <h2>Sign In</h2>
         <div class="modal-content">
