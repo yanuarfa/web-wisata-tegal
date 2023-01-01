@@ -242,13 +242,13 @@
 }
 
 .wrapper-imgtestimoni > img {
-  width: 450px;
+  width: 250px;
   border-radius: 10px;
+  object-fit: cover;
 }
 
 .testimoni-people {
   width: 50%;
-  /* background-color: aqua; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -257,18 +257,26 @@
 
 .text-testimoni h2 {
   font-size: 1.7rem;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .text-testimoni p:nth-child(2) {
   margin: 10px 0 20px 0;
-  font-size: 1.2rem;
+  font-size: 0.9rem;
+  color: rgb(201, 201, 201);
 }
 
 .text-testimoni p:nth-child(3) {
   margin: 20px 0 20px 0;
-  font-size: 1.2rem;
+  font-size: 0.9rem;
+  color: rgb(201, 201, 201);
 }
+
+.swiper {
+  width: 80%;
+  height: 500px;
+}
+
 
 /* Akhir Style Halaman Testimoni */
 
@@ -464,6 +472,7 @@ h1 {
   margin: 20px;
   text-align: justify;
 }
+
 .pernyataan {
   border: #000 solid 1px;
   border-radius: 20px;
@@ -474,6 +483,7 @@ h1 {
   height: 300px;
   border-radius: 20px;
   opacity: 10;
+  object-fit: cover;
 }
 
 /* Akhir style halaman biodata */
@@ -674,4 +684,162 @@ hr {
 
 .hv:hover {
   background-color: rgba(227, 106, 7, 0.979);
+}
+
+@media only screen and (max-width: 820px) {
+  .menu_wrapper {
+    display: none;
+  }
+  
+  .content_wrapper > h1 {
+    font-size: 1.8rem;
+  }
+  
+  .wisata_h2 {
+    font-size: 1.8rem;
+    text-align: center;
+    color: var(--black);
+    margin: 50px 0 20px 0;
+  }
+  
+  .wisata_section {
+    margin: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .card {
+    width: 90%;
+  }
+  
+  .card_image_section > img {
+    height: 200px;
+  }
+
+  .card_paragraph {
+    font-size: 0.9rem;
+  }
+
+  .paket_wisata_section {
+    margin: 0 0px 50px 0px;
+  }
+  
+  .paket_wisata_section > h2 {
+    font-size: 1.8rem;
+  }
+  
+  .wrapper-paketwisata {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .h-cardpaketwisata {
+    height: 450px;
+  }
+  
+  .testimoni_section > h2 {
+    font-size: 1.8rem;
+  }
+  
+  .wrapper-eachtestimoni {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .wrapper-imgtestimoni > img {
+    width: 200px;
+  }
+
+  .stars {
+    display: none;
+  }
+  
+  .text-testimoni h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .text-testimoni p:nth-child(2) {
+    margin: 5px 0 5px 0;
+    font-size: 0.8rem;
+  }
+  
+  .text-testimoni p:nth-child(3) {
+    margin: 5px 0 5px 0;
+    font-size: 0.8rem;
+  }
+  
+  .swiper {
+    height: 800px;
+  }
+  
+  .kontak_section > h2 {
+    font-size: 1.8rem;
+  }
+  
+  .wrapper_kontak {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .wrapper_information {
+    width: 50%;
+    text-align: center;
+  }
+  
+  .wrapper_kontakmaps {
+    margin: 0 40px;
+  }
+
+  .javascript_section > h2 {
+    font-size: 1.8rem;
+  }
+  
+  .biodata_section > h2 {
+    font-size: 1.8rem;
+  }
+  
+  .wrapper_biodata {
+    width: 90%;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-gap: 10px;
+    padding: 0;
+    margin: 12px;
+    border-radius: 8px;
+  }
+  
+  .grid-container > div {
+    text-align: center;
+    padding: 10px 0;
+    justify-content: center;
+  }
+  .isi {
+    background-color: #fff;
+  }
+  
+  .isi p {
+    font-size: 10px;
+    margin: 10px;
+    text-align: start;
+  }
+  
+  .img img {
+    width: 100px;
+    height: 150px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
 }
