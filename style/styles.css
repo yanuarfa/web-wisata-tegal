@@ -289,17 +289,194 @@
 }
 
 .wrapper_kontak {
-  display: grid;
-  grid-template-columns: auto auto auto;
+  margin: 50px 100px;
+  display: flex;
+  justify-content: center;
 }
 
 .wrapper_information {
-  background-color: #aaaaaa;
+  width: 30%;
   text-align: center;
-  border: 1px solid rgba(0, 0, 0, 0.8);
+  /* border: 1px solid rgba(0, 0, 0, 0.8); */
+}
+
+.wrapper_kontakmaps {
+  margin: 0 100px;
 }
 
 /* Akhir Style Halaman Kontak */
+
+/* Style Halaman Javascript */
+
+.javascript_section {
+  height: 1200px;
+}
+
+.span {
+  height: 50px;
+}
+
+.javascript_section > h2 {
+  font-size: 2rem;
+  color: var(--black);
+  text-align: center;
+}
+
+.card_kalkulator {
+  box-shadow: 0 4px 8px 0 rgba(2, 3, 14, 0.2);
+  border-radius: 5px;
+  padding: 30px;
+  margin-top: 20px;
+}
+
+.flex-container-column {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: right;
+}
+
+.display {
+  color: white;
+  width: 100%;
+  padding: 10px 20px;
+  background-color: rgb(48, 44, 44);
+  border: 1px solid rgb(6, 5, 14);
+  font-size: 2em;
+}
+
+.flex-container-row {
+  display: flex;
+}
+
+.button {
+  flex-basis: 25%;
+  font-size: 1.5em;
+  padding: 40px;
+  text-align: center;
+  border: 1px solid rgb(6, 5, 14);
+  background: -webkit-linear-gradient(top, #f1efef, rgb(194, 188, 188));
+  cursor: pointer;
+}
+
+.button:hover {
+  font-weight: bold;
+}
+
+.operator,
+.negative,
+.equals {
+  background: rgb(240, 156, 0);
+}
+
+.double {
+  flex-basis: 50%;
+}
+
+.history {
+  width: 80%;
+  margin: 30px auto 0 auto;
+  overflow-y: scroll;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th,
+td {
+  text-align: center;
+  padding: 16px;
+}
+
+th {
+  background-color: rgb(240, 156, 0);
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f1efef;
+}
+
+@media screen and (max-width: 513px) {
+  .button {
+    padding: 10px;
+  }
+
+  .history {
+    width: 100%;
+  }
+}
+
+/* Akhir Style Halaman Javascript */
+
+/* Biodata */
+
+.biodata_section {
+  height: 800px;
+}
+
+.biodata_section > h2 {
+  font-size: 2rem;
+  color: var(--black);
+  text-align: center;
+}
+
+.wrapper_biodata {
+  width: 80%;
+  margin: 0 auto;
+  font-family: sans-serif;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-gap: 10px;
+  height: auto;
+  padding: 40px;
+  margin: 50px;
+  border-radius: 2rem;
+  align-items: center;
+  background-color: rgb(253, 253, 255);
+}
+
+.grid-container > div {
+  text-align: center;
+  padding: 20px 0;
+  justify-content: center;
+}
+.isi {
+  background-color: #fff;
+}
+h1 {
+  font-size: 25px;
+  margin: 0 auto;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.isi p {
+  font-size: 15px;
+  margin: 20px;
+  text-align: justify;
+}
+.pernyataan {
+  border: #000 solid 1px;
+  border-radius: 20px;
+}
+
+.img img {
+  width: 250px;
+  height: 300px;
+  border-radius: 20px;
+  opacity: 10;
+}
+
+/* Akhir style halaman biodata */
 
 /* Footer */
 
@@ -491,8 +668,8 @@ hr {
 
 .no-color {
   background-color: rgba(219, 218, 218, 0.269);
-  border: .2px solid #c8c8c8ab;
-  transition: .3s all;
+  border: 0.2px solid #c8c8c8ab;
+  transition: 0.3s all;
 }
 
 .hv:hover {

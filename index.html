@@ -266,25 +266,125 @@
       <div class="wrapper_kontak">
         <div class="wrapper_information">
           <h3>Address</h3>
-          <p>Kota Tegal, Kabupaten Tegal, Jawa Tengah. 52121</p>
+          <a
+            href="https://www.google.com/maps/dir//Tegal,+Kota+Tegal,+Jawa+Tengah/@-6.8705694,109.08222,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x2e6fb9dfbf3264c3:0x3027a76e352bbe0!2m2!1d109.1255917!2d-6.8797041"
+            >Kota Tegal, Kabupaten Tegal, Jawa Tengah. 52121</a
+          >
         </div>
         <div class="wrapper_information">
           <h3>Email</h3>
-          <p>windiyuliasih19@gmail.com</p>
+          <a
+            href="https://support.google.com/mail/answer/8494?hl=id&co=GENIE.Platform%3DDesktop"
+            >windiyuliasih19@gmail.com</a
+          >
         </div>
         <div class="wrapper_information">
           <h3>No. Hp</h3>
-          <p>081808248842</p>
+          <a href="https://www.whatsapp.com/?lang=id">081808248842</a>
         </div>
       </div>
-      <div class="wrapper_kontakmaps"></div>
+      <div class="wrapper_kontakmaps">
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63378.673884153046!2d109.08221999328403!3d-6.870569428931957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6fb9dfbf3264c3%3A0x3027a76e352bbe0!2sTegal%2C%20Kota%20Tegal%2C%20Jawa%20Tengah!5e0!3m2!1sid!2sid!4v1672333641465!5m2!1sid!2sid"
+            width="100%"
+            height="400"
+            style="border: 0; border-radius: 8px"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
     </section>
     <!-- Akhir Kontak -->
 
+    <!-- Javascript -->
+    <section class="javascript_section" id="javascript">
+      <div class="span"></div>
+      <h2>Javascript</h2>
+      <div class="wrapper_javascript">
+        <div class="flex-container-column card_kalkulator">
+          <div class="display">
+            <h1 id="displayNumber">0</h1>
+          </div>
+          <div class="flex-container-row">
+            <div class="button">7</div>
+            <div class="button">8</div>
+            <div class="button">9</div>
+            <div class="button negative">+/-</div>
+          </div>
+          <div class="flex-container-row">
+            <div class="button">4</div>
+            <div class="button">5</div>
+            <div class="button">6</div>
+            <div class="button operator">-</div>
+          </div>
+          <div class="flex-container-row">
+            <div class="button">1</div>
+            <div class="button">2</div>
+            <div class="button">3</div>
+            <div class="button operator">+</div>
+          </div>
+          <div class="flex-container-row">
+            <div class="button clear">C</div>
+            <div class="button">0</div>
+            <div class="button equals double">=</div>
+          </div>
+        </div>
+        <div class="history card_kalkulator">
+          <h2>Riwayat Perhitungan</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Angka Pertama</th>
+                <th>Operator</th>
+                <th>Angka Kedua</th>
+                <th>Hasil</th>
+              </tr>
+            </thead>
+            <tbody id="historyList"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir Javascript -->
+
+    <!-- Biodata -->
+    <section class="biodata_section" id="biodata">
+      <div class="span_biodata"></div>
+      <h2>Biodata</h2>
+      <div class="wrapper_biodata">
+        <div class="grid-container" style="opacity: 0.8">
+          <div class="img">
+            <img src="img/yota.jpeg" alt="Windia Puji Yuliasih" />
+          </div>
+          <div class="isi">
+            <p>Nama: Windia Puji Yuliasih</p>
+            <p>Nim : 2103040132</p>
+            <p>Prodi : Teknik Informatika</p>
+            <p>No. Telpon : 081808248842</p>
+            <p>Alamat e-mail : windiyuliasih19@gmail.com</p>
+            <div class="pernyataan">
+              <p>
+                Saya yang bertanda tangan dibawah ini menyatakan tidak
+                mencontek/ berbuat curang selama mengerjakan soal ujian ini.
+                Jika ternyata saya melanggar, saya bersedia dikenakan sanksi
+                berupa dibatalkan nilai ujian kuliah ini
+              </p>
+              <p>Yang menyatakan</p>
+              <p>Windia Puji Yuliasih</p>
+              <p>NIM 2103040132</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- AkhirBiodata -->
+
     <!-- Footer -->
     <footer>
-      <p>Windia Puji Yuliasih</p>
-      <p>2103040132</p>
+      <p>© 2022, Wisata tegal</p>
     </footer>
     <!-- Akhir Footer -->
 
@@ -356,6 +456,7 @@
     </div>
 
     <!-- Akhir Modal -->
+    <script src="./history.js"></script>
     <script src="./script.js"></script>
   </body>
 </html>
